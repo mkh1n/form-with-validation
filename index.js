@@ -9,12 +9,12 @@ const state = {
     'birth-day': false
   },
   errors: {
-    'first-name': 'Имя должно быть не пустым и состоять только из букв!',
-    'last-name': 'Фамилия должна быть не пустой и состоять только из букв!',
-    'email': 'Некорректный имейл!',
-    'password': 'Пароль должен содержать заглавную букву, хотя бы одну цифру и специальный символ!',
-    'password-confirm': 'Пароли должны совпадать!',
-    'birth-day': 'Вам должно быть как минимум 18 лет!'
+    'first-name': 'Имя должно быть не пустым и состоять только из букв.',
+    'last-name': 'Фамилия должна быть не пустой и состоять только из букв.',
+    'email': 'Некорректный имейл.',
+    'password': 'Пароль должен содержать заглавную букву, хотя бы одну цифру и специальный символ.',
+    'password-confirm': 'Пароли должны совпадать.',
+    'birth-day': 'Вам должно быть как минимум 18 лет.'
   }
 }
 
@@ -26,8 +26,8 @@ function isAdult(birthdate) {
   return ageInYears >= 18;
 }
 function isValidPassword(password) {
-  const hasUppercase = /[A-Z]/.test(password);
-  const hasLowercase = /[a-z]/.test(password);
+  const hasUppercase = /[A-ZА-Я]/.test(password);
+  const hasLowercase = /[a-zа-я]/.test(password);
   const hasDigit = /\d/.test(password);
   const hasSymbol = /[!@#$%^&*()]/.test(password);
 
@@ -86,7 +86,7 @@ document.querySelectorAll('input').forEach((input) => {
     validateForm(input);
   })
 })
-document.querySelector('button[type="submit"]').addEventListener('click', (e) => {
+document.querySelector('form').addEventListener('submit', (e) => {
   e.preventDefault();
-  
+  e.currentTarget.innerHTML = 'Вы успешно заполнили форму!'
 })

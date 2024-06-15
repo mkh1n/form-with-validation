@@ -11,8 +11,8 @@
 </head>
 <body>
   <div class="container">
-     <section class="formHolder">
-    <form action="">
+     <div class="formHolder">
+    <form>
       <div class="inputHolder">
         <div>
           <label for="first-name">Имя</label>
@@ -29,14 +29,14 @@
       </div>
       <div class="inputHolder">
         <div>
-          <label for="">Имейл</label>
+          <label for="email">Имейл</label>
           <input type="email" name="email" id="email" placeholder="ivan@yahoo.com">
         </div>
         <small id="email-message"></small>
       </div>
       <div class="inputHolder">
         <div>
-          <label for="">Пароль</label>
+          <label for="password">Пароль</label>
           <input type="password" name="password" id="password" placeholder="Не менее 8 символов">
         </div>
         <small id="password-message"></small>
@@ -44,7 +44,7 @@
       <div class="inputHolder">
         <div>
           <label for="password-confirm">Подтвердите пароль</label>
-          <input type="password" name="password-confirm" id="password-confirm">
+          <input type="password" name="password-confirm" id="password-confirm" placeholder="Не менее 8 символов">
         </div>
         <small id="password-confirm-message"></small>
       </div>
@@ -55,9 +55,9 @@
         </div>
         <small id="birth-day-message"></small>
       </div>
-      <button type="submit" disabled="true" id="form-button">Создать аккаунт</button>
+      <button type="submit" disabled id="form-button">Создать аккаунт</button>
     </form>
-  </section>
+  </div>
   </div>
   <script src="./index.js"></script>
 
