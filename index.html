@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+     <section class="formHolder">
+    <form action="">
+      <div class="inputHolder">
+        <div>
+          <label for="first-name">Имя</label>
+          <input type="text" name="first-name" id="first-name" placeholder="Иван">
+        </div>
+        <small id="first-name-message"></small>
+      </div>
+      <div class="inputHolder">
+        <div>
+          <label for="last-name">Фамилия</label>
+          <input type="text" name="last-name" id="last-name" placeholder="Иванов">
+        </div>
+        <small id="last-name-message"></small>
+      </div>
+      <div class="inputHolder">
+        <div>
+          <label for="">Имейл</label>
+          <input type="email" name="email" id="email" placeholder="ivan@yahoo.com">
+        </div>
+        <small id="email-message"></small>
+      </div>
+      <div class="inputHolder">
+        <div>
+          <label for="">Пароль</label>
+          <input type="password" name="password" id="password" placeholder="Не менее 8 символов">
+        </div>
+        <small id="password-message"></small>
+      </div>
+      <div class="inputHolder">
+        <div>
+          <label for="password-confirm">Подтвердите пароль</label>
+          <input type="password" name="password-confirm" id="password-confirm">
+        </div>
+        <small id="password-confirm-message"></small>
+      </div>
+      <div class="inputHolder">
+        <div>
+          <label for="birth-day">Дата рождения</label>
+          <input type="date" name="birth-day" id="birth-day">
+        </div>
+        <small id="birth-day-message"></small>
+      </div>
+      <button type="submit" disabled="true" id="form-button">Создать аккаунт</button>
+    </form>
+  </section>
+  </div>
+  <script src="./index.js"></script>
+
+</body>
+</html>
