@@ -8,6 +8,7 @@ A web form with field validation using regular expressions.
 
 - **Field Validation**: Ensures users enter correct values.
   - If a user inputs an incorrect value, an error message will appear below the field, and the field border will turn red.
+  - The submit button is disabled until all the values in the fields are correct
 
 ## Live Demo
 
